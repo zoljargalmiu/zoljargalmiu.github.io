@@ -1,0 +1,18 @@
+body {
+  background-color: lightblue;
+}
+
+.middle {
+  text-align: center;
+}
+
+.middle ul {
+    list-style-type: none;
+}
+
+.image {
+  padding: 15px;
+  height: 210px;
+  width: auto;
+  border-radius: 20px;
+}
