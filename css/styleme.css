@@ -1,0 +1,49 @@
+body {
+  background-color: lightblue;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: darkorchid;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro p:first-letter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 65px;
+  line-height: 60px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+ul > li {
+  color: brown;
+}
+
+.middle {
+  text-align: center;
+}
+
+.middle ul {
+  list-style-type: none;
+}
+
+.image {
+  padding: 15px;
+  height: 210px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.validator {
+  padding: 20px;
+}
