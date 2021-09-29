@@ -1,0 +1,39 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Unicode", "Helvetica", "Arial",
+    sans-serif;
+}
+
+h1 {
+  color: #a4a400;
+  background-color: #f0f0f0;
+}
+
+h2 {
+  color: #a4a400;
+  background-color: #f0f0f0;
+}
+
+h3 {
+  color: #a4a400;
+  background-color: #f0f0f0;
+}
+
+h4 {
+  color: #a4a400;
+  background-color: #f0f0f0;
+}
+
+h5 {
+  color: #a4a400;
+  background-color: #f0f0f0;
+}
+
+h6 {
+  color: #a4a400;
+  background-color: #f0f0f0;
+}
+
+/* (1024x768) iPad 1 & 2, Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* insert styles here */
+}
