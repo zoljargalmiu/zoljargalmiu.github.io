@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../content/tmnt/background.png");
+  font-family: Verdana, Tahoma;
+}
+
+header {
+  background-image: url("../content/tmnt/bannerbg.png");
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 2px 2px #6d6d6d;
+  text-align: center;
+}
+
+a,
+p,
+dl {
+  font-size: 9pt;
+}
+
+aside {
+  width: min-content;
+  max-width: 33%;
+  background-color: #a2b964;
+  height: auto;
+}
+
+.section {
+  background-image: url("../content/tmnt/rbg.png");
+}
+
+.article {
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+
+dl {
+  margin: 0;
+  padding: 5px 10px 10px 10px;
+}
+
+dl > dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+dl > dd > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.article p {
+}
+
+.article .quote {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.article .quote p:first-child {
+  border: 2px solid #6d6d6d;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.article .quote p img {
+  float: left;
+}
+
+.article .quote p:first-child q {
+  font-weight: bold;
+}
+
+.article .quote p:nth-child(2) {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section span {
+  color: red;
+  font-size: 3rem;
+}
+.main {
+  width: 70%;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 4px solid #6d6d6d;
+}
+
+.page {
+  clear: left;
+  background-color: #a2b964;
+  margin: 0;
+  text-align: center;
+  padding: 8px;
+}
+
+.validators {
+  float: right;
+  opacity: 0.5;
+}
