@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+
+function shortest(n1, n2, n3) {
+  var shortWord='';
+  if(n1.length<n2.length)
+  shortWord = n1;
+  else
+  shortWord = n2;
+
+  if(shortWord.length<n3)
+  return shortWord;
+  else
+  return shortWord = n3;
+}
+
+document.writeln("min value of 3 param: " + shortest('hello','z','bye') + "<br/>");
+
+</script>
+<table>
+  <tr>
+    <td colspan="2">1</td>
+    <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      </tr>
+</table>
+</body>
+</html>
