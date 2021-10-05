@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Timing</h2>
+
+<p>Click "Try it". Wait 10 minutes, and the page will alert "10 minutes have passed".</p>
+
+<button onclick="setTimeout(myFunction, 600000);">Click me!</button>
+
+<script>
+const atoms = [
+"Hydrogen",
+"Helium",
+"Lithium",
+"Beryllium"
+];
+
+const atomsLength = atoms.map(function(s) { return s.length });
+console.log("a2: " + atomsLength);
+const atomsLengthV2 = atoms.map(s => s.length);
+console.log("a3: " + atomsLengthV2);
+
+const atomsLong = atoms.filter(function(s) {return s.length > 7 });
+const atomsLong2 = atoms.filter( s => s.length > 7 );
+
+console.log("filter atomsLong: " + atomsLong);
+
+console.log("filter atomsLong2: " + atomsLong2);
+
+
+function myFunction() {
+  alert('10 minutes have passed');
+}
+</script>
+
+</body>
+</html>
