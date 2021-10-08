@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W2D1 Functional Programming and RegExp</title>
+    <meta charset="utf-8">
+    <style>
+        #content {padding-left: 65px;}
+    </style>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script> -->
+    <!-- <script>
+      // initialize mocha
+      mocha.setup('bdd');
+      // chai has a lot of stuff, let's make assert global
+      let assert = chai.assert;
+  </script> -->
+  <script>
+    // const reducer_sum = (accumulator, currentValue) => accumulator + currentValue;
+    // const reducer_multiply = (accumulator, currentValue) => accumulator * currentValue;
+
+    // var x=1;
+    // function xFunc() {
+    //     console.log(x);
+    //     var y=1;
+    //     yFunc();
+    //     function yFunc() {
+    //         var z=2;
+    //         console.log('y: ' + y);
+    //         console.log('z: ' + z);
+    //     }
+    // }
+    // xFunc();
+
+    var x = 5;
+var y = test();
+var b = { x: 4 };
+var z = y.bind(b);
+z();
+function test() {
+    console.log(this);
+    console.log(x);
+    var z = function() {
+        var x = 3;
+        console.log(this);
+        console.log(this.x);
+    }
+    var x = 8;
+    z();
+    return z;
+}
+
+    
+  </script>
+
+  <!-- <script>
+    describe("Functional Programming problems Unit Test", function () {
+        it("It returns total sum of an array elements.",
+            function () {
+                assert.equal(10, [1,2,3,4].reduce(reducer_sum));
+            });
+        
+        it("It returns total multiply of an array elements.",
+            function () {
+                assert.equal(24, [1,2,3,4].reduce(reducer_multiply));
+            });
+
+        it("It returns reverse of the string.",
+            function () {
+                assert.equal("!noos oS","So soon!".split("").reverse().join(""));
+            });
+
+        it("It returns filter of long word specialized by limit number.",
+            function () {
+                assert.equal('wake',['hey','you','wake','up'].filter(function(s) { return s.length > 3}));
+            });
+    });
+  </script> -->
+  </head>
+<body>
+
+<!-- <div id="mocha"></div>
+    <script>
+        mocha.run();
+    </script> -->
+
+</body>
+</html>

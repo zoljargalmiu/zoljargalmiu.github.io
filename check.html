@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>W2D4 Q2</title>
+        <meta charset="utf8">
+        <script>
+
+            function submitForm(){
+                module(document.myForm.first.value, document.myForm.last.value);
+                event.preventDefault();
+            }
+
+            /* widely used in single page web apps */
+            const module = (function(firstName, lastName) {
+            const validateFirstName = function(firstName) {
+                if(firstName === "")
+                    return false;
+                else 
+                    return true;
+            };
+            const validateLastName = function(lastName) {
+                if(lastName === "")
+                    return false;
+                else 
+                    return true;
+            };
+            const validate = function() {
+                if(validateFirstName && validateLastName){
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            };
+            return {
+            anotherMethod: validate
+            };
+         })();
+
+        </script>
+    </head>
+    
+    <body>
+        <form id="myForm" name="myForm" onsubmit="submitForm();">
+            <input type="text" name="first" id="first" placeholder="First Name" /> <br />
+            <input type="text" name="last" id="last" placeholder="Last Name" /> <br />
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
