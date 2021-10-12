@@ -4,7 +4,27 @@
     <title>W2D1 Functional Programming and RegExp</title>
     <meta charset="utf-8">
     <style>
-        #content {padding-left: 65px;}
+        div {
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#a { 
+    position: relative; 
+    top: 100px;
+}
+#b {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 200px;
+}
+#c { 
+    position: fixed; 
+    bottom: 50px;
+    right: 50px;
+}
     </style>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
@@ -32,23 +52,32 @@
     // }
     // xFunc();
 
-    var x = 5;
-var y = test();
-var b = { x: 4 };
-var z = y.bind(b);
-z();
-function test() {
-    console.log(this);
-    console.log(x);
-    var z = function() {
-        var x = 3;
-        console.log(this);
-        console.log(this.x);
-    }
-    var x = 8;
-    z();
-    return z;
-}
+//     var b = 5;
+// var c = hello(b);
+// var a = 1000;
+// var d = {a: 50, b: 90};
+// console.log(c.apply(d));
+// function hello(a) {
+//     console.log(this);
+//     a = a * 2;
+//     console.log(bye())
+//     function bye() {
+//         console.log(this);
+//         console.log(b);
+//         console.log(this.b);
+//         return a;
+//     }
+//     var b = 100;
+//     return bye;
+// }
+
+
+function foo() {
+ x = 4;
+ console.log(x);
+};
+
+foo();
 
     
   </script>
@@ -78,7 +107,11 @@ function test() {
   </script> -->
   </head>
 <body>
-
+    <div id="a">Text for a
+        <div id="b">Text for b
+          <div id="c">Text for c</div>
+        </div>
+      </div>
 <!-- <div id="mocha"></div>
     <script>
         mocha.run();
