@@ -1,0 +1,49 @@
+h1 {
+  margin: 1rem 3rem 0;
+}
+.container {
+  padding: 2rem;
+  display: flex;
+}
+.product-item {
+  max-width: 200px;
+  border: 1px solid #2badce;
+  border-radius: 8px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.product-item > p > a {
+  font-size: 18px;
+  color: rgb(148, 79, 15);
+}
+.product-item p {
+  color: #3fd853;
+}
+
+.cart {
+  margin: 1rem 2rem 0;
+  background: #eee;
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#quantity {
+  position: absolute;
+  color: red;
+  font-weight: bold;
+  top: -10px;
+  right: 0px;
+  font-size: 23px;
+}
+
+#feedback {
+  color: #3fd853;
+  background-color: white;
+  width: fit-content;
+  padding: 10px 2rem;
+  text-align: center;
+  margin: 0 auto;
+  height: 20px;
+}
